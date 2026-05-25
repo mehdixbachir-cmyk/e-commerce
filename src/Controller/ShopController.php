@@ -13,12 +13,6 @@ final class ShopController extends AbstractController
         return $this->render('shop/index.html.twig');
     }
 
-    #[Route('/login', name: 'app_login')]
-    public function login(): Response
-    {
-        return $this->render('shop/login.html.twig');
-    }
-
     #[Route('/profile', name: 'app_profile')]
     public function profile(): Response
     {
